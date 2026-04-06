@@ -1,0 +1,16 @@
+int monte1(int *A, int low, int high, int x){
+    
+    int i;
+    int r;
+    
+    for(i = low; i <= high; i++){
+        r = rand() % 4;
+        if(r <= 2){
+            comp++;
+            if(A[i] == x)
+                return 1;
+        }
+    }
+    
+    return 0;
+}
