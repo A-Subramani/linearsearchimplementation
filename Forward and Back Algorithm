@@ -1,0 +1,32 @@
+int fb(int *A, int low, int high, int x){
+    
+    int n;
+    int r;
+    int i;
+    
+    n = high-low+1;
+    
+    r = rand() % 2;
+    
+    if(r == 0){
+        for(i = low; i <= high; i++){
+            comp++;
+            if(A[i] == x)
+                return 1;
+        }
+        
+        return 0;
+    }
+    
+    if(r == 1){
+        for(i = high; i <= low; i--){
+            comp++;
+            if(A[i] == x)
+                return 1;
+        }
+        
+        return 0;
+    }
+    
+    return 0;
+}
