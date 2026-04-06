@@ -1,0 +1,18 @@
+int randposstart(int *A, int low, int high, int x){
+    
+    int n;
+    int r;
+    int i;
+    
+    n = high-low+1;
+    
+    r = rand() % n;
+    
+    for(i = 0; i < n; i++){
+        comp++;
+        if(A[(r+i) % n] == x)
+            return 1;
+    }
+    
+    return 0;
+}
