@@ -1,0 +1,27 @@
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    
+    int n, x, i, j;
+    int *A;
+    int d;
+    
+    srand(time(NULL));
+    
+
+    for(n = 1; n <= 3000; n++){
+        A = (int*) malloc(n * sizeof(int));
+        for(i = 0; i < n; i++)
+            A[i] = i+1;
+        
+        x = n/2;
+ 
+        for(j = 1; j <= 5; j++){
+            d = ps1(A, 0, n-1, x);
+        }
+        comp = comp/5;
+         printf("(%d, %d), ", n, comp);
+        comp = 0;
+    }
+    
+    return 0;
+}
