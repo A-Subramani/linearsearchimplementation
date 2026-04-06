@@ -14,14 +14,6 @@ int main(int argc, const char * argv[]) {
             A[i] = i+1;
         
         x = n/2;
- 
-        for(j = 1; j <= 5; j++){
-            d = ps1(A, 0, n-1, x);
-        }
-        comp = comp/5;
-         printf("(%d, %d), ", n, comp);
-        comp = 0;
     }
     
     return 0;
-}
